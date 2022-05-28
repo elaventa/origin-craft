@@ -1,5 +1,23 @@
 .navbar{
     min-height: 10vh;
     width: 100%;
-    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .navitems{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .navitem{
+            margin: 0 10px;
+            font-size: 21px;
+            line-height: 28px;
+
+            a{
+                text-decoration: none;
+                color: #5D4F3F;
+            }
+        }
+    }
 }
