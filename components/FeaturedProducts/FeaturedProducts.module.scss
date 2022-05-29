@@ -11,9 +11,10 @@
     }
     .title{
         font-size: 64px;
-        font-weight: bolder;
+        
         line-height: 83px;
         letter-spacing: -0.015em;
+        color: #723E31;
         @media(max-width: 1280px){
             font-size: 46px;
         }
@@ -22,6 +23,7 @@
         }
         @media(max-width: 800px){
             font-size: 20px;
+            font-weight: bolder;
         }
     }
 
