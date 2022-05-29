@@ -5,6 +5,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    @media(max-width: 800px){
+        display: none;
+    }
     .navitems{
         display: flex;
         flex-direction: row;

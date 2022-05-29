@@ -1,11 +1,18 @@
 .homepage{
     height: 90vh;
     position: relative;
+    @media(max-width: 800px){
+       height: 40vh;
+    }
     img{
         min-width: 100vw;
         max-width: 100vw;
         min-height: 90vh;
         max-height: 90vh;
+        @media(max-width: 800px){
+            min-height:40vh;
+            max-height:40vh;
+         }
     }
 
     .content{
@@ -29,6 +36,17 @@
             margin: auto;
             background-color: transparent;
             margin-bottom: 60px;
+            @media(max-width: 1280px){
+                font-size: 80px;
+            }
+            @media(max-width: 1024px){
+                font-size: 70px;
+            }
+            @media(max-width: 800px){
+                font-size: 25px;
+                line-height: 30.2px;
+                letter-spacing: -0.011em; 
+            }
         }
         .btn{
             background-color: #F2F1EF;
@@ -38,6 +56,16 @@
             outline: none;
             font-size: 24px;
             cursor: pointer;
+            @media(max-width: 1280px){
+                font-size: 22px;
+            }
+            @media(max-width: 800px){
+                font-size: 20px;
+            }
+            @media(max-width: 800px){
+                font-size: 18px;
+                padding: 10px 22px;
+            }
         }
     }
 }

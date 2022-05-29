@@ -1,4 +1,9 @@
 .carouselContainer{
     margin: 96px;
-    
+    @media(max-width: 1024px){
+        margin: 60px;
+    }
+    @media(max-width: 800px){
+        margin: 20px;
+    }
 }

@@ -2,12 +2,25 @@
     background-color: #EAE0D6;
     width: fit-content;
     padding: 32px;
+    @media(max-width: 1024px){
+       padding: 20px;
+    }
+    @media(max-width: 800px){
+        padding: 15px;
+    }
     .productImg{
         width: 250px;
         height: 250px;
 
         background-color: #FFFFFF;
-        margin: 32px;
+        @media(max-width: 1024px){
+            width: 200px;
+            height: 200px;
+        }
+        @media(max-width: 800px){
+            width: 150px;
+            height: 150px;
+        }
     }
     .title{
         text-align: center;
@@ -15,5 +28,12 @@
         font-size: 24px;
         line-height: 28px;
         margin-top: 40px;
+        @media(max-width: 1024px){
+            font-size: 22px;
+            margin-top: 20px;
+        }
+        @media(max-width: 800px){
+            font-size: 18px;
+        }
     }
 }
