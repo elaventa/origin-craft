@@ -1,8 +1,12 @@
 import React from 'react'
+import FeaturedProducts from '../components/FeaturedProducts/FeaturedProducts'
 
 const About = () => {
   return (
-    <div>This is about page</div>
+    <>
+      <div>This is about page</div>
+      <FeaturedProducts />
+    </>
   )
 }
 
