@@ -3,8 +3,20 @@
     display:flex;
     justify-content: center;
     padding:80px;
-    color:white;
-    background-color: #5d4f3f;
+    // color:white;
+    background-color: #5D4F3F;;
+    font-family: 'Neue Helvetica';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 32px;
+/* or 133% */
+
+
+/* Minimal-1/Light */
+
+color: #EAE0D6;
+
 
    
     li{
@@ -28,5 +40,12 @@
     }
     .col3{
         padding:40px;
+    }
+    .icons{
+        margin: 20px;
+        svg{
+            margin-right: 20px;
+            color: #EAE0D6;
+        }
     }
 }

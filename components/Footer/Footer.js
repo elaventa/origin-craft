@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Footer.module.scss";
 import logo from "../../assets/logo.png";
 import Image from "next/image";
+import {FaWhatsapp, FaInstagram} from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -21,6 +22,10 @@ const Footer = () => {
         <li>Products</li>
         <li>About</li>
         <li>Contact Us</li>
+        <div className={styles.icons}>
+          <FaWhatsapp />
+          <FaInstagram />
+        </div>
       </div>
       <div className={styles.col3}>
         <h3>Reach Us</h3>

@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './GetInTouch.module.scss'
+import {FaWhatsapp, FaInstagram} from 'react-icons/fa'
+
 
 const GetInTouch = () => {
 
@@ -11,6 +13,10 @@ const GetInTouch = () => {
         <p className={styles.contact}> <span>
         Contact:</span> +91 557206035, +971 528779096</p>
         <p className={styles.email}><span>Email: </span>origincraft.rak@gmail.com</p>
+        </div>
+        <div>
+        <FaWhatsapp />
+          <FaInstagram />
         </div>
 </div>
 
