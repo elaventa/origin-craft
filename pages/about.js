@@ -1,13 +1,14 @@
-import React from 'react'
-import FeaturedProducts from '../components/FeaturedProducts/FeaturedProducts'
+import React from "react";
+import FeaturedProducts from "../components/FeaturedProducts/FeaturedProducts";
+import AboutUs from "../components/AboutUs/AboutUs";
 
 const About = () => {
   return (
     <>
-      <div>This is about page</div>
+      <AboutUs />
       <FeaturedProducts />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
