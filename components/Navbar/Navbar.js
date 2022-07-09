@@ -10,17 +10,19 @@ const Navbar = () => {
   return (
     <>
       <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <Image src={logo} alt="logo" />
-        </div>
+        <Link href="/" passHref>
+          <div className={styles.logo}>
+            <Image src={logo} alt="logo" />
+          </div>
+        </Link>
         <div className={styles.navitems}>
-          <div className={styles.navitem}><Link href="#">Wallet</Link></div>
-          <div className={styles.navitem}><Link href="#">Gift Box</Link></div>
-          <div className={styles.navitem}><Link href="#">Chocolate & Sweets</Link></div>
-          <div className={styles.navitem}><Link href="#">Special Moments </Link></div>
-          <div className={styles.navitem}><Link href="#">Jewellary leather</Link></div>
-          <div className={styles.navitem}><Link href="#">Office stationary</Link></div>
-          <div className={styles.navitem}><Link href="#">Oud & Perfume </Link></div>
+          <div className={styles.navitem}><Link href="/products">Wallet</Link></div>
+          <div className={styles.navitem}><Link href="/products">Gift Box</Link></div>
+          <div className={styles.navitem}><Link href="/products">Chocolate & Sweets</Link></div>
+          <div className={styles.navitem}><Link href="/products">Special Moments </Link></div>
+          <div className={styles.navitem}><Link href="/products">Jewellary leather</Link></div>
+          <div className={styles.navitem}><Link href="/products">Office stationary</Link></div>
+          <div className={styles.navitem}><Link href="/products">Oud & Perfume </Link></div>
         </div>
 
         <div onClick={e => setclick(!click)} className={styles.toggle}>
@@ -28,7 +30,7 @@ const Navbar = () => {
         </div>
         
       </nav>
-      {click && <NavPopup />}
+      {click && <NavPopup setclick={setclick} click={click} />}
     </>
       
     )
