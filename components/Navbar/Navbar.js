@@ -1,11 +1,14 @@
 import styles from './Navbar.module.scss'
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import NavPopup from './NavPopup/NavPopup'
 
 const Navbar = () => {
+  const [click, setclick] = useState(false)
   return (
+    <>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Image src={logo} alt="logo" />
@@ -20,10 +23,14 @@ const Navbar = () => {
           <div className={styles.navitem}><Link href="#">Oud & Perfume </Link></div>
         </div>
 
-        <div className={styles.toggle}>
-          
+        <div onClick={e => setclick(!click)} className={styles.toggle}>
+          <span></span>
         </div>
+        
       </nav>
+      {click && <NavPopup />}
+    </>
+      
     )
 }
 
