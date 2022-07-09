@@ -1,0 +1,52 @@
+.Getintouch {
+  text-align: center;
+  background-color: white;
+  padding:60px;
+  margin: 60px;
+
+  .title {
+    font-family: "Ivar Display Hydro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 68px;
+
+    text-transform: capitalize;
+
+    color: #723e31;
+
+   
+  }
+  .line2 {
+    font-family: "Neue Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 28px;
+
+    color: #a67564;
+  }
+
+  .contact {
+    font-family: "Neue Helvetica";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 28px;
+
+    color: #a67564;
+    margin-top: 20px;
+  }
+  span {
+    font-weight: 400;
+  }
+  .email {
+    font-family: "Neue Helvetica";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 28px;
+
+    color: #a67564;
+  }
+}
