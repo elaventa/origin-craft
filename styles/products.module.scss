@@ -1,0 +1,24 @@
+.productContainer{
+    position: relative;
+    .filter{
+        cursor: pointer;
+        margin-left: 120px;
+        margin-top: 50px;
+        width: fit-content;
+        z-index: 2;
+        background-color: #5D4F3F;
+        padding: 8px 16px;
+        color: #EAE0D6;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    // .filterContainer{
+    //     // position: absolute;
+    //     // top: 50px;
+    //     // z-index: 1;
+    //     // width: 80%;
+    //     // margin: auto;
+    // }
+}
