@@ -1,0 +1,34 @@
+.aboutus {
+  display: flex;
+  margin-top: 150px;
+  div {
+    width: 50%;
+    padding: 100px;
+    background-color: white;
+
+    .about {
+      font-family: "Ivar Display Hydro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 96px;
+      line-height: 115px;
+      text-align: center;
+      letter-spacing: -0.015em;
+
+      color: #a65e46;
+    }
+    .descr {
+      font-family: "Neue Helvetica";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 36px;
+      /* or 129% */
+
+      color: #a67564;
+    }
+  }
+  .blank {
+    background: #e2e2e2;
+  }
+}

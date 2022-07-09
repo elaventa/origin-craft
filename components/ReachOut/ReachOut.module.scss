@@ -1,0 +1,68 @@
+.container {
+  text-align: center;
+  margin-top: 150px;
+  background-color: white;
+
+  .title {
+    text-align: center;
+    .reach {
+      text-align: center;
+
+      font-family: "Ivar Display Hydro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 57px;
+      line-height: 68px;
+
+      text-transform: capitalize;
+
+      color: #723e31;
+    }
+    .reach2 {
+      margin-top: 20px;
+      font-family: "Neue Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 28px;
+
+      color: #a67564;
+    }
+  }
+  .contact {
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 80px;
+
+    .details {
+      span {
+        font-weight: 300;
+      }
+
+      font-family: "Neue Helvetica";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 36px;
+      text-align: left;
+      padding-left: 180px;
+
+      color: #a65e46;
+      p {
+        margin-bottom: 30px;
+      }
+      div {
+        svg {
+          margin: 20px;
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .map {
+      width: 40%;
+      padding-left: 50px;
+      height: 40%;
+      margin-right: 140px;
+    }
+  }
+}
