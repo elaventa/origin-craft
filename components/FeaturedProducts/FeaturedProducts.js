@@ -1,10 +1,6 @@
 import React from "react";
-import ProductCard from "../ProductCard/ProductCard";
-import p from "../../assets/flowerGiftBox.png";
 import styles from "./FeaturedProducts.module.scss";
 
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import { ProductsCarousel } from "../ProductsCarousel/ProductsCarousel";
 
 const responsive = {

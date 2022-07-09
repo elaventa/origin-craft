@@ -13,7 +13,7 @@ import "react-multi-carousel/lib/styles.css";
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1280 },
-        items: 4,
+        items: 4.5,
         slidesToSlide: 3, // optional, default to 1.
     },
     desktop2: {
@@ -41,6 +41,12 @@ export const ProductsCarousel = () => {
             autoPlay={false}
             containerClass={styles.carouselContainer}
         >
+            <ProductCard url={p1} title="Flower Gift Box" />
+            <ProductCard url={p2} title="Flower Gift Box 1" />
+            <ProductCard url={p3} title="Flower Gift Box 2" />
+            <ProductCard url={p4} title="Flower Gift Box 3" />
+            <ProductCard url={p2} title="Flower Gift Box 4" />
+            <ProductCard url={p4} title="Flower Gift Box 4" />
             <ProductCard url={p1} title="Flower Gift Box" />
             <ProductCard url={p2} title="Flower Gift Box 1" />
             <ProductCard url={p3} title="Flower Gift Box 2" />
