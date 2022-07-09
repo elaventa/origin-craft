@@ -1,0 +1,21 @@
+.footer{
+    display:flex;
+    justify-content: center;
+    margin:80px;
+    li{
+        list-style: none;
+        margin:20px;
+    }
+    
+    .col1{
+        width:20%;
+        padding: 40x;
+    }
+    .col2{
+        width:20%;
+        padding:40px;
+    }
+    .col3{
+        padding:40px;
+    }
+}
