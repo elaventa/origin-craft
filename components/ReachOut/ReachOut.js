@@ -26,7 +26,7 @@ const ReachOut = () => {
           <p>
             {" "}
             <span>Adress: </span> P.O Box 6315 <br /> Al Qusaidat, Near Lamp
-            Round About, Ras Al Khaimah,
+            Round About, <br/>Ras Al Khaimah,
             <br /> United Arab Emirates{" "}
           </p>
           <div>

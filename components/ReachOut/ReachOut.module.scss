@@ -78,11 +78,14 @@
     }
     .map {
       width: 50%;
-      // padding-left: 50px;
+      padding-left: 40px;
+      padding-right: 40px;
       height: 40%;
       // margin-right: 140px;
       @media(max-width: 1300px) {
         margin: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
        }
        @media(max-width: 1000px) {
         width:auto;
