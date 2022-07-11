@@ -3,7 +3,7 @@ import styles from "./ReachOut.module.scss";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Map from "../Map/Map";
 
-const AboutUs = () => {
+const ReachOut = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
@@ -42,4 +42,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default ReachOut;
