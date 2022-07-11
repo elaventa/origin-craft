@@ -11,7 +11,9 @@ font-weight: 300;
 font-size: 24px;
 line-height: 32px;
 /* or 133% */
-
+@media(max-width: 900px) {
+    flex-direction: column;
+}
 
 /* Minimal-1/Light */
 
@@ -32,11 +34,17 @@ color: #EAE0D6;
     .col1{
         width:40%;
         padding: 40x;
+        @media(max-width: 900px) {
+            width:100%;
+        }
       
     }
     .col2{
         width:20%;
         padding:40px;
+        @media(max-width: 900px) {
+            width:100%;
+        }
     }
     .col3{
         padding:40px;
