@@ -1,8 +1,8 @@
-import styles from "../styles/products.module.scss"
+import styles from "../../styles/products.module.scss"
 import { useState } from "react";
-import Filter from "../components/Filter/Filter";
-import Products from "../components/Products/Products";
-import FilterContainer from "../components/FilterContainer/FilterContainer";
+import FilterContainer from "../../components/FilterContainer/FilterContainer";
+import Products from "../../components/Products/Products";
+
 
 const ProductsPage = () => {
   const [category, setcategory] = useState([])
@@ -26,7 +26,7 @@ const ProductsPage = () => {
         {click && <FilterContainer handleFilter={handleFilter} checked={category} />}
       </div>
       <div className={styles.products}>
-        <Products category={category} />
+        <Products category={category.length === 0 ? "all" : category} />
       </div>
     </div>
   )

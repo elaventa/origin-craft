@@ -1,6 +1,7 @@
 const category = [
     {
         title: "Flower gift box",
+        categorySlug: "flower-gift-box",
         list: [
             {
                 name: "round-curry-prove-box",
@@ -23,6 +24,7 @@ const category = [
     },
     {
         title: "Wedding special gift product",
+        categorySlug: "wedding-special-gift-product",
         list: [
             {
                 name: "money-box",
@@ -45,6 +47,7 @@ const category = [
     },
     {
         title: "Chocolate&sweets",
+        categorySlug: "chocolate-sweets",
         list: [
             {
                 name: "cartoon-box",
@@ -65,6 +68,7 @@ const category = [
     },
     {
         title: "Wallet",
+        categorySlug: "wallet",
         list: [
             {
                 name: "ladies-wallet",
@@ -84,6 +88,7 @@ const category = [
     },
     {
         title: "Oud&Perfume box",
+        categorySlug: "oudperfume-box",
         list: [
             {
                 name: "hard-case-boxes",
@@ -101,6 +106,7 @@ const category = [
     },
     {
         title: "Jewellery leather products",
+        categorySlug: "jewellery-leather-products",
         list: [
             {
                 name: "ring-box",
@@ -127,12 +133,7 @@ const category = [
     },
     {
         title: "Office stationary products",
-        list: [
-            ,
-            ,
-            ,
-            ,
-        ],
+        categorySlug: "office-stationary-products",
         list: [
             {
                 name: "tissue-box",
@@ -161,6 +162,7 @@ const category = [
     },
     {
         title: "Special Moments Products",
+        categorySlug: "special-moments-products",
         list: [],
     },
 ];

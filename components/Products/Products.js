@@ -7,7 +7,7 @@ const Products = ({category}) => {
   const [filteredProducts, setfilteredProducts] = useState([])
 
   useEffect(() => {
-    if(category.length === 0){
+    if(category === "all"){
         setfilteredProducts(prod)
     } else {
       setfilteredProducts(prod.filter(p => category.includes(p.category)))

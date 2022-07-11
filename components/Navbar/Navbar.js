@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import NavPopup from './NavPopup/NavPopup'
-
+import category from '../../data/categories'
 const Navbar = () => {
   const [click, setclick] = useState(false)
   return (
@@ -16,13 +16,16 @@ const Navbar = () => {
           </div>
         </Link>
         <div className={styles.navitems}>
-          <div className={styles.navitem}><Link href="/products">Wallet</Link></div>
+          {category.map((categ, i) => (
+            <div key={i} className={styles.navitem}><Link href={`/products/${categ.categorySlug}`}>{categ.title}</Link></div>
+          ))}
+          {/* <div className={styles.navitem}><Link href="/products">Wallet</Link></div>
           <div className={styles.navitem}><Link href="/products">Gift Box</Link></div>
           <div className={styles.navitem}><Link href="/products">Chocolate & Sweets</Link></div>
           <div className={styles.navitem}><Link href="/products">Special Moments </Link></div>
           <div className={styles.navitem}><Link href="/products">Jewellary leather</Link></div>
           <div className={styles.navitem}><Link href="/products">Office stationary</Link></div>
-          <div className={styles.navitem}><Link href="/products">Oud & Perfume </Link></div>
+          <div className={styles.navitem}><Link href="/products">Oud & Perfume </Link></div> */}
         </div>
 
         <div onClick={e => setclick(!click)} className={styles.toggle}>
