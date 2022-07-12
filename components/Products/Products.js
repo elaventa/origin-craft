@@ -3,7 +3,7 @@ import prod from "../../data/products"
 import ProductCard from "../ProductCard/ProductCard";
 import { useEffect, useState } from "react";
 
-const Products = ({category}) => {
+const Products = ({category, style}) => {
   const [filteredProducts, setfilteredProducts] = useState([])
 
   useEffect(() => {
@@ -16,9 +16,9 @@ const Products = ({category}) => {
   
   
   return (
-    <div className={styles.products}>
+    <div  className={styles.products}>
         {filteredProducts.map(product => (
-            <ProductCard key={product.id} url={product.url} title={product.name}/>
+            <ProductCard style={style} key={product.id} url={product.url} title={product.name}/>
         ))}
     </div>
   )

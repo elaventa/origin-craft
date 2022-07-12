@@ -17,6 +17,7 @@ const ProductsPage = () => {
     
   }
 
+
   return (
     <div className={styles.productContainer}>
       <div onClick={e => setclick(!click)} className={styles.filter}>

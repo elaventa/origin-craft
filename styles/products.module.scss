@@ -20,6 +20,18 @@
             margin-top: 20px;
         }
     }
+
+    .products{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .products{
+            .productContainer{
+                background-color: rebeccapurple;
+            }
+        }
+    }
     
     // .filterContainer{
     //     // position: absolute;
