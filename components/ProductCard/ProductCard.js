@@ -6,7 +6,7 @@ const ProductCard = ({url, title, style}) => {
   return (
     <div style={style} className={styles.productContainer}>
         <Image className={styles.productImg} src={url} alt={title} width="200px" height={200}/>
-        <p className={styles.title}>{title}</p>
+        {/* <p className={styles.title}>{title}</p> */}
     </div>
   )
 }
