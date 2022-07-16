@@ -18,8 +18,6 @@ const AboutUs = () => {
         </p>
       </div>
       <div className={styles.blank}>
-
-        {/* <Image src={im}/> */}
       </div>
     </div>
   );
