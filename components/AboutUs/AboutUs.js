@@ -1,11 +1,13 @@
+import Image from "next/image";
 import React from "react";
 import styles from "./AboutUs.module.scss";
+import im from '../../assets/about.webp'
 
 const AboutUs = () => {
   return (
     <div className={styles.aboutus}>
       <div>
-        <p className={styles.about}>About us</p>
+        <p className={styles.about}>ABOUT US</p>
 
         <p className={styles.descr}>
           Beautiful & Creative Box is an exceptional way to boost your product
@@ -15,7 +17,10 @@ const AboutUs = () => {
           leather & Paper Boxes for any product.
         </p>
       </div>
-      <div className={styles.blank}></div>
+      <div className={styles.blank}>
+
+        {/* <Image src={im}/> */}
+      </div>
     </div>
   );
 };

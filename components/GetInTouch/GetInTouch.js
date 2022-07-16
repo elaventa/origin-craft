@@ -11,7 +11,7 @@ const GetInTouch = () => {
         <p className={styles.line2}>For customized product and services, you can reach out to us</p>
         <div>
         <p className={styles.contact}> <span>
-        Contact:</span> +91 557206035, +971 528779096</p>
+        Contact:</span> +91 557206035, <br/> +971 528779096</p>
         <p className={styles.email}><span>Email: </span>origincraft.rak@gmail.com</p>
         </div>
         <div>
