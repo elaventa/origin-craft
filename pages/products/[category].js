@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 
   return {
     paths: paths.map((category) => ({params: {category}})),
-    fallback: true,
+    fallback: false,
   }
 }
 
@@ -64,7 +64,7 @@ const Category = ({categories, products}) => {
             console.log(category)
 
         }
-  }, [categoryId])
+  }, [categoryId, category])
   
 
   const handleFilter = (newClicked) => {
