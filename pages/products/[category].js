@@ -64,7 +64,7 @@ const Category = ({categories, products}) => {
             console.log(category)
 
         }
-  }, [categoryId, category])
+  }, [categoryId])
   
 
   const handleFilter = (newClicked) => {
