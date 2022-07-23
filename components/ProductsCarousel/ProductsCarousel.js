@@ -37,7 +37,7 @@ const responsive = {
         slidesToSlide: 1, // optional, default to 1.
     },
 };
-export const ProductsCarousel = () => {
+export const ProductsCarousel = ({products}) => {
     return (
         <Carousel
             showDots={false}
@@ -46,18 +46,7 @@ export const ProductsCarousel = () => {
             autoPlay={false}
             containerClass={styles.carouselContainer}
         >
-            <ProductCard url={p1} title="Flower Gift Box" />
-            <ProductCard url={p2} title="Flower Gift Box 1" />
-            <ProductCard url={p3} title="Flower Gift Box 2" />
-            <ProductCard url={p4} title="Flower Gift Box 3" />
-            <ProductCard url={p2} title="Flower Gift Box 4" />
-            <ProductCard url={p4} title="Flower Gift Box 4" />
-            <ProductCard url={p1} title="Flower Gift Box" />
-            <ProductCard url={p2} title="Flower Gift Box 1" />
-            <ProductCard url={p3} title="Flower Gift Box 2" />
-            <ProductCard url={p4} title="Flower Gift Box 3" />
-            <ProductCard url={p2} title="Flower Gift Box 4" />
-            <ProductCard url={p4} title="Flower Gift Box 4" />
+            {products.fproducts.map((product, i) => <ProductCard key={i} product={product} />)}
         </Carousel>
     );
 };

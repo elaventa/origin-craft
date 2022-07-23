@@ -17,23 +17,33 @@ const query = groq`*[_type=="category"]{
   title,
 }`
 
+const featuredProductsQuery = groq`
+*[_type == "featured"][0]{
+  fproducts[]->{
+    mainImage
+  }
+}
+`
+
 export const getStaticProps = async() => {  
   const categories = await client.fetch(query)
+  const fproducts = await client.fetch(featuredProductsQuery)
   return {
     props: {
-      categories
+      categories,
+      fproducts
     },
     revalidate: 10
   }
 }
 
 
-const About = ({categories}) => {
+const About = ({categories, fproducts}) => {
   return (
     <>
       <Navbar categories={categories} />
       <AboutUs />
-      {/* <FeaturedProducts /> */}
+      <FeaturedProducts products={fproducts} />
       <GetInTouch />
       <Footer />
 

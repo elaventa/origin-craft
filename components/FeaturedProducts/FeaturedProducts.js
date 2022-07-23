@@ -3,7 +3,7 @@ import styles from "./FeaturedProducts.module.scss";
 
 import { ProductsCarousel } from "../ProductsCarousel/ProductsCarousel";
 
-const FeaturedProducts = () => {
+const FeaturedProducts = ({products}) => {
     return (
         <>
             <div className={styles.featuredProducts}>
@@ -14,7 +14,7 @@ const FeaturedProducts = () => {
                     VIEW ALL
                 </button>
             </div>
-            <ProductsCarousel />
+            <ProductsCarousel products={products} />
         </>
             
         

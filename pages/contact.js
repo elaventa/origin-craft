@@ -19,12 +19,22 @@ const query = groq`*[_type=="category"]{
   list,
   title,
 }`
+const featuredProductsQuery = groq`
+*[_type == "featured"][0]{
+  fproducts[]->{
+    mainImage
+  }
+}
+`
+
 
 export const getStaticProps = async() => {  
   const categories = await client.fetch(query)
+  const fproducts = await client.fetch(featuredProductsQuery)
   return {
     props: {
-      categories
+      categories,
+      fproducts
     },
     revalidate: 10
   }
@@ -33,26 +43,13 @@ export const getStaticProps = async() => {
 
 
 
-const Contact = ({categories}) => {
-  const router = useRouter();
-const [loading, setLoading] = useState(false);
-
-useEffect(() => {
-    const handleStart = (url) => {
-      url !== router.pathname ? setLoading(true) : setLoading(false);
-    };
-    const handleComplete = (url) => setLoading(false);
-
-    router.events.on("routeChangeStart", handleStart);
-    router.events.on("routeChangeComplete", handleComplete);
-    router.events.on("routeChangeError", handleComplete);
-  }, [router]);
+const Contact = ({categories, fproducts}) => {
   return (
     <>
       <Navbar categories={categories} />
       <Loading loading={loading} />
       <ReachOut />
-      {/* <FeaturedProducts /> */}
+      <FeaturedProducts products={fproducts} />
       <GetInTouch />
       <Footer />
 
