@@ -1,8 +1,6 @@
 import styles from "./FilterContainer.module.scss"
-import category from "../../data/categories"
-import { useState } from "react"
 
-const FilterContainer = ({handleFilter, checked}) => {
+const FilterContainer = ({handleFilter, checked, categories: category}) => {
   
   return (
     <div className={styles.filterContainer}>
@@ -12,14 +10,14 @@ const FilterContainer = ({handleFilter, checked}) => {
            <div className={styles.sub}>
             
             {categ.list.map((sub, j) => (
-              <div key={sub.name} className={styles.subcategory}>
-              <label htmlFor={sub.name}>{sub.value}</label>
+              <div key={sub.value.current} className={styles.subcategory}>
+              <label htmlFor={sub.value.current}>{sub.name}</label>
               <input
                   type="checkbox"
-                  id={sub.name}
+                  id={sub.value.current}
                   name={sub.name}
-                  value={sub.value}
-                  checked={checked.includes(sub.name)}
+                  value={sub.value.current}
+                  checked={checked.includes(sub.value.current)}
                   onChange={e => handleFilter(e.target.id)}
                 /> 
             </div>

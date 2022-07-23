@@ -1,24 +1,25 @@
 import styles from "./Products.module.scss";
-import prod from "../../data/products"
 import ProductCard from "../ProductCard/ProductCard";
 import { useEffect, useState } from "react";
 
-const Products = ({category, style}) => {
+const Products = ({products: prod, category, style}) => {
+  console.log(prod)
   const [filteredProducts, setfilteredProducts] = useState([])
 
   useEffect(() => {
     if(category === "all"){
         setfilteredProducts(prod)
     } else {
-      setfilteredProducts(prod.filter(p => category.includes(p.category)))
+      setfilteredProducts(prod.filter(p => category.includes(p.subCategory.value.current)))
     }
   }, [category])
   
+
   
   return (
     <div  className={styles.products}>
         {filteredProducts.map(product => (
-            <ProductCard style={style} key={product.id} url={product.url} title={product.name}/>
+            <ProductCard style={style} product={product} key={product.id} url={product.mainImage} title={product.name}/>
         ))}
     </div>
   )

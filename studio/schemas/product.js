@@ -17,10 +17,13 @@ export default {
       },
     },
     {
-      name: 'category',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      name: 'subCategory',
+      title: 'Sub Category',
+      type: 'reference',
+      to: {
+        type: 'subCategory'
+      }
+      // of: [{type: 'subCategory'}],
     },
   ],
 
