@@ -47,7 +47,6 @@ const Contact = ({categories, fproducts}) => {
   return (
     <>
       <Navbar categories={categories} />
-      <Loading loading={loading} />
       <ReachOut />
       <FeaturedProducts products={fproducts} />
       <GetInTouch />

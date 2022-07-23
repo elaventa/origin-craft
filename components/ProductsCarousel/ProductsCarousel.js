@@ -1,10 +1,5 @@
 import React from "react";
 import ProductCard from "../ProductCard/ProductCard";
-import p1 from "../../assets/flowerGiftBox.png";
-import p2 from "../../assets/choclate.png";
-import p3 from "../../assets/jewel.png";
-import p4 from "../../assets/weddingSplGB.png";
-
 import styles from "./ProductsCarousel.module.scss";
 
 import Carousel from "react-multi-carousel";
