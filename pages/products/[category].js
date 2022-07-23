@@ -6,6 +6,8 @@ import { useRouter } from 'next/router'
 import { groq } from "next-sanity";
 import client from "@lib/sanity";
 import Navbar from "components/Navbar/Navbar";
+import GetInTouch from "components/GetInTouch/GetInTouch";
+import Footer from "components/Footer/Footer";
 
 const query = groq`*[_type=="category"]{
   _id,
@@ -29,7 +31,7 @@ export async function getStaticPaths() {
 
   return {
     paths: paths.map((category) => ({params: {category}})),
-    fallback: false,
+    fallback: 'blocking',
   }
 }
 
@@ -89,6 +91,8 @@ const Category = ({categories, products}) => {
           <Products products={products} category={category} />
         </div>
       </div>
+      <GetInTouch />
+      <Footer />
     </> 
   )
 }

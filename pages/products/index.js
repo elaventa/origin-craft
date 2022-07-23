@@ -5,6 +5,8 @@ import Products from "../../components/Products/Products";
 import Navbar from "components/Navbar/Navbar";
 import { groq } from "next-sanity";
 import client from "@lib/sanity";
+import Footer from "components/Footer/Footer";
+import GetInTouch from "components/GetInTouch/GetInTouch";
 
 const query = groq`*[_type=="category"]{
   _id,
@@ -61,6 +63,8 @@ const ProductsPage = ({categories, products}) => {
         <Products products={products} category={category.length === 0 ? "all" : category} />
       </div>
     </div>
+    <GetInTouch />
+    <Footer />
     </>
   )
 }
