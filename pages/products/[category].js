@@ -45,7 +45,6 @@ export const getStaticProps = async() => {
 }
 
 const Category = ({categories, products}) => {
-  console.log(categories)
   const router = useRouter()
   const { category: categoryId } = router.query
 
@@ -55,13 +54,11 @@ const Category = ({categories, products}) => {
 
   useEffect(() => {
         const initialCategories = categories.filter(c =>  c.categorySlug.current === categoryId)
-        console.log(initialCategories)
         if(initialCategories.length != 0){
             let catList = initialCategories[0].list.map(cate => {
                 return cate.value.current
             })
             setcategory(catList)
-            console.log(category)
 
         }
   }, [categoryId])
@@ -81,7 +78,7 @@ const Category = ({categories, products}) => {
     <>
       <Navbar categories={categories} />
       <div className={styles.productContainer}>
-        <div onClick={e => {setclick(!click);console.log(category)}} className={styles.filter}>
+        <div onClick={e => {setclick(!click)}} className={styles.filter}>
           {click ? "Close" : "Filter"}
         </div>
         <div className={styles.filterContainer}>

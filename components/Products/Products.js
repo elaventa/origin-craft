@@ -3,7 +3,6 @@ import ProductCard from "../ProductCard/ProductCard";
 import { useEffect, useState } from "react";
 
 const Products = ({products: prod, category, style}) => {
-  console.log(prod)
   const [filteredProducts, setfilteredProducts] = useState([])
 
   useEffect(() => {

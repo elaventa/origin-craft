@@ -8,7 +8,6 @@ import NavPopup from './NavPopup/NavPopup'
 
 
 const Navbar = ({categories: category}) => {
-  console.log(category)
   const [click, setclick] = useState(false)
   return (
     <>

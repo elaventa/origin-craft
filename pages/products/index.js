@@ -37,14 +37,10 @@ const ProductsPage = ({categories, products}) => {
   const [click, setclick] = useState(false)
 
   const handleFilter = (newClicked) => {
-    console.log(category)
-    console.log(newClicked)
     if(category.includes(newClicked)){
       setcategory(category.filter(c => c!=newClicked))
-      console.log(category)
     } else {
       setcategory([...category, newClicked])
-      console.log(category)
     }
     
   }
