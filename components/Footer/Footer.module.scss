@@ -3,14 +3,12 @@
     display:flex;
     justify-content: center;
     padding:80px;
-    // color:white;
     background-color: #5D4F3F;;
     font-family: 'Neue Helvetica';
-font-style: normal;
-font-weight: 300;
-font-size: 24px;
-line-height: 32px;
-/* or 133% */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
 @media(max-width: 900px) {
     flex-direction: column;
     font-size: 20px;
@@ -22,12 +20,17 @@ line-height: 32px;
 color: #EAE0D6;
 
 
-   
     li{
         list-style: none;
         margin:20px;
-        
-      
+    }
+    .li{
+        list-style: none;
+        margin:20px;
+        cursor: pointer;
+        &:hover{
+            color: #eae0d6;
+        }
     }
     
     h3{

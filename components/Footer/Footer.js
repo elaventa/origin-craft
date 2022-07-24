@@ -3,6 +3,7 @@ import styles from "./Footer.module.scss";
 import logo from "../../assets/logo.png";
 import Image from "next/image";
 import {FaWhatsapp, FaInstagram} from 'react-icons/fa'
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -18,14 +19,16 @@ const Footer = () => {
       </div>
       <div className={styles.col2}>
         <h3>Links</h3>
-        <li>Home</li>
-        <li>Products</li>
-        <li>About</li>
-        <li>Contact Us</li>
-        <div className={styles.icons}>
-          <FaWhatsapp />
-          <FaInstagram />
-        </div>
+        <ul>
+          <Link href={"/"} passHref><li className={styles.li}>Home</li></Link> 
+          <Link href={"/products"} passHref><li className={styles.li}>Products</li></Link> 
+          <Link href={"/about"} passHref><li className={styles.li}>About</li></Link> 
+          <Link href={"/contact"} passHref><li className={styles.li}>Contact Us</li></Link> 
+          <div className={styles.icons}>
+            <FaWhatsapp />
+            <FaInstagram />
+          </div>
+        </ul>
       </div>
       <div className={styles.col3}>
         <h3>Reach Us</h3>
