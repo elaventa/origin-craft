@@ -44,8 +44,8 @@ const Footer = () => {
       
       </div>
       <div className={styles.copyright}>
-          Copyright © 2022 Origin Craft |
-          Designed and Developed by <a target="_blank" rel="noreferrer" href="https://elaventa.com">Elaventa</a>
+          Copyright © 2023 Origin Craft |
+          Designed and Developed by <a target="_blank" rel="noreferrer" href="https://perple.in">Perple</a>
         </div>
     </div>
   );
