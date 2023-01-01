@@ -45,6 +45,7 @@
     
         .review{
             margin: 50px;
+            width: 300px;
             font-family: 'Neue Helvetica';
             font-style: normal;
             font-weight: 400;
@@ -52,6 +53,7 @@
             line-height: 34px;
             @media(max-width: 1200px) {
                 margin: 30px;
+                width: 80vw;
             }
         }
 

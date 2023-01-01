@@ -10,10 +10,21 @@ const Review = () => {
         Our Review Says
       </h1>
       <p className={styles.content}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet sit et quam ut est enim leo tempor aliquet.
+      Our clients praise us for our great results, personable service, expert knowledge and on-time delivery. Here are what just a few of them had to say.
       </p>
 
       <div className={styles.reviews}>
+        
+
+        <div className={styles.review}>
+            <div className={styles.stars}>
+               <Stars />
+            </div>
+            <p className={styles.content}>
+              “This printing press is very good , affordable prices , nice work.”
+            </p>
+        </div>
+
         <div className={styles.review}>
             <div className={styles.stars}>
               <Stars />
@@ -25,19 +36,10 @@ const Review = () => {
 
         <div className={styles.review}>
             <div className={styles.stars}>
-               <Stars />
-            </div>
-            <p className={styles.content}>
-              “Good and best choice for customised boxes gift boxes bags especially in leather and printing.”
-            </p>
-        </div>
-
-        <div className={styles.review}>
-            <div className={styles.stars}>
             <Stars />
             </div>
             <p className={styles.content}>
-              “Good and best choice for customised boxes gift boxes bags especially in leather and printing.”
+              “Ecellent Gift boxes specially leather box.”
             </p>
         </div>
       </div>
