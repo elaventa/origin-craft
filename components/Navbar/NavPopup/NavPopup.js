@@ -18,10 +18,10 @@ const NavPopup = ({setclick, click}) => {
         </Link>
         <div className={styles.social}>
             <a  href="https://wa.me/+971506385117">
-                <Image src={instagram} width={30} height={30} alt="instagram"/>
+                <Image src={whatsapp} width={30} height={30} alt="whatsapp"/>
             </a>
             <a href="https://instagram.com/origincraft_uae">
-                <Image src={whatsapp} width={30} height={30} alt="whatsapp"/>
+                <Image src={instagram} width={30} height={30} alt="instagram"/>
             </a>
         </div>
 
