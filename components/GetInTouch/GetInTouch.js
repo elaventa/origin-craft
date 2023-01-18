@@ -13,7 +13,7 @@ const GetInTouch = () => {
                 <p className={styles.contact}>
                     {" "}
                     <span>Contact:</span>{" "}
-                    <a href="tel:+9172260010">+917 22 600 10</a>
+                    <a href="tel:+9172260010">+917 22 600 10</a>, <br /><a href="https://wa.me/+971506385117">+971506385117</a>
                 </p>
                 <p className={styles.email}>
                     <span>Email: </span>{" "}
