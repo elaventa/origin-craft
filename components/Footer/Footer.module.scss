@@ -14,6 +14,9 @@
         font-size: 20px;
         padding: 20px;
     }
+    a{
+        color: #EAE0D6;
+    }
     .row{
         display:flex;
         justify-content: center;
@@ -79,6 +82,11 @@
     }
     .col3{
         padding:40px;
+        a{
+            color: #EAE0D6;
+            text-decoration: none;
+        }
+
         @media(max-width: 900px) {
             width:100%;
             padding:0;
