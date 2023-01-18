@@ -16,19 +16,18 @@ const NavPopup = ({setclick, click}) => {
         <Link  href={"/contact"} passHref>
             <p onClick={e => setclick(!click)} className={styles.item}>CONTACT US</p>
         </Link>
-
         <div className={styles.social}>
-            <a href="https://instagram.com">
+            <a  href="https://wa.me/+971506385117">
                 <Image src={instagram} width={30} height={30} alt="instagram"/>
             </a>
-            <a href="https://wa.me/+971557206035">
+            <a href="https://instagram.com/origincraft_uae">
                 <Image src={whatsapp} width={30} height={30} alt="whatsapp"/>
             </a>
         </div>
 
         <div className={styles.contact}>
             <p className={styles.content}>Get in Touch</p>
-            <p className={styles.content}>Contact: +971 557206035, +971 528779096</p>
+            <p className={styles.content}>Contact: <a href="tel:+9172260010">+917 22 600 10</a>, <br /><a href="https://wa.me/+971506385117">+971506385117</a></p>
         </div>
 
     </div>
