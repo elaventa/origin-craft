@@ -9,7 +9,7 @@ const HomePage = () => {
     <div className={styles.homepage}>
         <Image className={styles.background} src={background} alt="background"/>
         <div className={styles.content}>
-          <h1 className={styles.featureTitle}>Completely customized leather and box products</h1>
+          <h1 className={styles.featureTitle}>Completely customized Leather, Velvet & Paper Products</h1>
           <Link href="/products" passHref>
             <button className={styles.btn}>Shop Now</button>
           </Link>
