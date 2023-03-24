@@ -21,7 +21,7 @@ const Review = () => {
                <Stars />
             </div>
             <p className={styles.content}>
-              “This printing press is very good , affordable prices , nice work.”
+              “Best work always... appreciated.”
             </p>
         </div>
 
@@ -30,7 +30,7 @@ const Review = () => {
               <Stars />
             </div>
             <p className={styles.content}>
-              “Good and best choice for customised boxes gift boxes bags especially in leather and printing.”
+              “Great company and very good service”
             </p>
         </div>
 
@@ -39,7 +39,16 @@ const Review = () => {
             <Stars />
             </div>
             <p className={styles.content}>
-              “Excellent Gift boxes specially leather box.”
+              “Very Good and Fast Service”
+            </p>
+        </div>
+
+        <div className={styles.review}>
+            <div className={styles.stars}>
+            <Stars />
+            </div>
+            <p className={styles.content}>
+              “Excellent Gift boxes especially leather box”
             </p>
         </div>
       </div>
