@@ -48,7 +48,7 @@ const Footer = () => {
                     <h3>Reach Us</h3>
                     <li>
                         {" "}
-                        Contact: <a href="tel:+9172260010">+917 22 600 10</a>, <br /> <a href="https://wa.me/+971506385117">+971506385117</a>
+                        Contact: <a href="tel:+9712260010">+971 22 600 10</a>, <br /> <a href="https://wa.me/+971506385117">+971506385117</a>
                     </li>
                     <li>
                         Email:{" "}

@@ -39,7 +39,7 @@ const Review = () => {
             <Stars />
             </div>
             <p className={styles.content}>
-              “Ecellent Gift boxes specially leather box.”
+              “Excellent Gift boxes specially leather box.”
             </p>
         </div>
       </div>

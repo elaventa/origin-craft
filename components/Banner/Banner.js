@@ -12,7 +12,7 @@ const Banner = () => {
         <Image src={banner1} alt="banner" />
         <div className={styles.custom}>
             <h1 className={styles.title}>Customized Leather Products</h1>
-            <p className={styles.content}>We pride ourselves as a custom leather goods manufacturer at every step from design to production under one company. True Trident Leather is a custom leather manufacturer or in other words, a custom leather maker that can turn your ideas into reality using high-quality leather materials.</p>
+                        <p className={styles.content}>At Origin Craft, we don&apos;t just create custom leather goods, we bring your dreams to life! From the initial design phase to the final product, we handle every step with precision and care, ensuring that you receive a one-of-a-kind piece that is as unique as you are. Our team of skilled artisans use only the finest materials to craft each and every item, resulting in a stunning masterpiece that will last a lifetime. So why settle for ordinary when you can have extraordinary? Let Origin Craft turn your vision into a reality that you can cherish forever!</p>
             <Link href={"/products"} passHref>
               <button className={styles.btn}>View all products</button>
             </Link>
