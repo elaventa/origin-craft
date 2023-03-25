@@ -4,7 +4,7 @@ import Products from "../../components/Products/Products";
 import FilterContainer from "../../components/FilterContainer/FilterContainer";
 import { useRouter } from "next/router";
 import { groq } from "next-sanity";
-import client from "@lib/sanity";
+import client, { urlFor } from "@lib/sanity";
 import Navbar from "components/Navbar/Navbar";
 import GetInTouch from "components/GetInTouch/GetInTouch";
 import Footer from "components/Footer/Footer";
