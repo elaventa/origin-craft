@@ -76,8 +76,8 @@ const Category = ({ categories, products }) => {
     return (
         <>
             <NextSeo
-                title={`${category.join(",")} | Origin craft UAE`}
-                description={`${category.join(",")} | Origin craft UAE`}
+                title={`${categoryId.replaceAll("-", " ").toUpperCase()} | Origin craft UAE`}
+                description={`${categoryId} ${category.join(", ").replaceAll("-", " ")} | Origin craft UAE`}
                 openGraph={{
                     type: "website",
                     locale: "en_IE",
