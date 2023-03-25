@@ -85,7 +85,7 @@ const Category = ({ categories, products }) => {
                     siteName: "OriginCraft",
                     images: [
                         {
-                            url: urlFor(products[0]?.mainImage)?.width(200)?.url() || "https://res.cloudinary.com/dpurlepvo/image/upload/v1679722897/bag_jedhvu.webp",
+                            url: urlFor(prod.filter(p => category.includes(p.subCategory.value.current))[0]?.mainImage)?.width(200)?.url() || "https://res.cloudinary.com/dpurlepvo/image/upload/v1679722897/bag_jedhvu.webp",
                         },
                     ],
                 }}
