@@ -51,6 +51,7 @@ const Category = ({ categories, products }) => {
     const { category: categoryId } = router.query;
 
     const [category, setcategory] = useState([]);
+    const [OgImg, setOgImg] = useState("")
     const [click, setclick] = useState(false);
 
     useEffect(() => {
@@ -62,6 +63,7 @@ const Category = ({ categories, products }) => {
                 return cate.value.current;
             });
             setcategory(catList);
+            setOgImg(urlFor(products.filter(p => catList.includes(p.subCategory.value.current))[0].mainImage)?.width(200)?.url())
         }
     }, [categoryId]);
 
@@ -85,7 +87,7 @@ const Category = ({ categories, products }) => {
                     siteName: "OriginCraft",
                     images: [
                         {
-                            url: urlFor(prod.filter(p => category.includes(p.subCategory.value.current))[0]?.mainImage)?.width(200)?.url() || "https://res.cloudinary.com/dpurlepvo/image/upload/v1679722897/bag_jedhvu.webp",
+                            url: OgImg || "https://res.cloudinary.com/dpurlepvo/image/upload/v1679722897/bag_jedhvu.webp",
                         },
                     ],
                 }}
