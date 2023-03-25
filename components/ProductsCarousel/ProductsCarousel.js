@@ -28,8 +28,8 @@ const responsive = {
     },
     mobile: {
         breakpoint: { max: 400, min: 0 },
-        items: 1.6,
-        slidesToSlide: 1, // optional, default to 1.
+        items: 1.8,
+        slidesToSlide: 1.8, // optional, default to 1.
     },
 };
 export const ProductsCarousel = ({products}) => {

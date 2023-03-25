@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import NavPopup from './NavPopup/NavPopup'
-
+import { AiOutlineClose } from "react-icons/ai"
 
 
 const Navbar = ({categories: category}) => {
@@ -14,7 +14,7 @@ const Navbar = ({categories: category}) => {
       <nav className={styles.navbar}>
         <Link href="/" passHref>
           <div className={styles.logo}>
-            <Image src={logo} alt="logo" />
+            <Image placeholder='blur' loading='lazy' src={logo} alt="logo" />
           </div>
         </Link>
         <div className={styles.navitems}>
@@ -31,7 +31,7 @@ const Navbar = ({categories: category}) => {
         </div>
 
         <div onClick={e => setclick(!click)} className={styles.toggle}>
-          <span></span>
+          {click ?  <AiOutlineClose style={{fontSize: '30px'}} /> : <span></span> }
         </div>
         
       </nav>

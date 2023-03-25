@@ -1,18 +1,16 @@
 .productContainer{
     background-color: #EAE0D6;
     width: fit-content;
-    padding: 32px;
-    @media(max-width: 1024px){
-       padding: 20px;
-    }
+    padding: 15px;
+
     @media(max-width: 800px){
-        padding: 18px;
+        padding: 10px;
         margin: 0 10px;
     }
     img{
         width: 250px !important;
         height: 250px !important;
-
+        object-fit: cover;
         background-color: #FFFFFF;
         @media(max-width: 1024px){
             width: 200px !important;

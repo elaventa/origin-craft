@@ -4,11 +4,11 @@ import star from "../../assets/star.png"
 const Stars = () => {
   return (
     <div style={{display: "flex"}}>
-        <Image src={star} alt="stars"/>
-        <Image src={star} alt="stars"/>
-        <Image src={star} alt="stars"/>
-        <Image src={star} alt="stars"/>
-        <Image src={star} alt="stars"/>
+        <Image placeholder='blur' loading='eager'  src={star} alt="stars"/>
+        <Image placeholder='blur' loading='eager'  src={star} alt="stars"/>
+        <Image placeholder='blur' loading='eager'  src={star} alt="stars"/>
+        <Image placeholder='blur' loading='eager'  src={star} alt="stars"/>
+        <Image placeholder='blur' loading='eager'  src={star} alt="stars"/>
     </div>
   )
 }

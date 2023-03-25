@@ -11,7 +11,7 @@ const Footer = () => {
             <div className={styles.row}>
                 <div className={styles.col1}>
                     <li>
-                        <Image className={styles.logo} src={logo} alt="logo" />
+                        <Image placeholder='blur' loading='lazy' className={styles.logo} src={logo} alt="logo" />
                     </li>
                     <li>
                         At Origin Craft, we provide creative and professionally
