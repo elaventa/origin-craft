@@ -48,7 +48,7 @@ const Footer = () => {
                     <h3>Reach Us</h3>
                     <li>
                         {" "}
-                        Contact: <a href="tel:+97172260010">+971 7 22 600 10</a>, <br /> <a href="https://wa.me/+971506385117">+971506385117</a>
+                        <a href="tel:+97172260010">+971 7 22 600 10</a>, <br /> <a href="https://wa.me/+971506385117">+971506385117</a>
                     </li>
                     <li>
                         Email:{" "}
@@ -59,7 +59,7 @@ const Footer = () => {
                     <li>
                         Address : <br /> Origin craft hand crafted products and
                         work llc <br /> Shop number:sr-02 <br /> Aljawis Street{" "}
-                        <br /> Near lamp roundabout about <br /> Qusaidat <br />{" "}
+                        <br /> Near lamp roundabout <br /> Qusaidat <br />{" "}
                         Ras al khaimah <br /> Po box : 6315
                     </li>
                 </div>

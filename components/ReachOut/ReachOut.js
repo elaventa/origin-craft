@@ -32,7 +32,7 @@ const ReachOut = () => {
                         {" "}
                         <span>Adress: </span> <br /> Origin craft hand crafted
                         products and work llc <br /> Shop number:sr-02 <br />{" "}
-                        Aljawis Street <br /> Near lamp roundabout about <br />{" "}
+                        Aljawis Street <br /> Near lamp roundabout <br />{" "}
                         Qusaidat <br /> Ras al khaimah <br /> Po box : 6315
                     </p>
                     <div>
