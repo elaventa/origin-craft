@@ -51,7 +51,7 @@ const NavPopup = ({ setclick, click }) => {
             <div className={styles.contact}>
                 <p className={styles.content}>Get in Touch</p>
                 <p className={styles.content}>
-                    <a href="tel:+97172260010">+971 7 22 600 10</a>,{" "}
+                    <a href="tel:+97172260010">+971 7 22 600 10</a>{" "}
                     <br />
                     <a href="https://wa.me/+971506385117">+971506385117</a>
                 </p>
